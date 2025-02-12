@@ -1,7 +1,11 @@
 import React, { useRef, useState } from "react";
 
 const iphone = "./iphone15black.jpg";
-const iphone2 = './iphone15white.jpg';
+const iphone2 = "./iphone15white.jpg";
+const card1 = "./card1.jpg";
+const card2 = "./card2.jpg";
+const card3 = "./card3.jpg";
+const card4 = "./card5.jpg";
 
 const Home = () => {
   const videoRef = useRef(null); // Reference to the video element
@@ -119,7 +123,10 @@ const Home = () => {
           </div>
           {/* Text Overlay at Middle Bottom */}
           <div className="mt-4 md:mt-8 absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 bg-opacity-50 text-white px-2 md:px-4 py-1 rounded-lg flex flex-col md:flex-row items-center gap-2 md:gap-4">
-            <a className="text-sm md:text-lg border-1 rounded-2xl py-1 px-2 md:py-1.5 md:px-4 hover:bg-white hover:text-black" href="#/">
+            <a
+              className="text-sm md:text-lg border-1 rounded-2xl py-1 px-2 md:py-1.5 md:px-4 hover:bg-white hover:text-black"
+              href="#/"
+            >
               Learn More
             </a>
             <a
@@ -145,16 +152,48 @@ const Home = () => {
               Capture your moments with our lens
             </h2>
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mt-4 md:mt-10">
-              <a className="text-sm md:text-base border-1 rounded-2xl py-1 px-2 md:py-1.5 md:px-4 hover:bg-black hover:text-white" href="#/">
+              <a
+                className="text-sm md:text-base border-1 rounded-2xl py-1 px-2 md:py-1.5 md:px-4 hover:bg-black hover:text-white"
+                href="#/"
+              >
                 Learn More
               </a>
-              <a className="text-sm md:text-base border-1 border-blue-400 rounded-2xl py-1 px-2 md:py-1.5 md:px-4 hover:bg-blue-400 hover:text-white" href="#/">
+              <a
+                className="text-sm md:text-base border-1 border-blue-400 rounded-2xl py-1 px-2 md:py-1.5 md:px-4 hover:bg-blue-400 hover:text-white"
+                href="#/"
+              >
                 Buy
               </a>
             </div>
           </div>
         </div>
       </section>
+      <section>
+  <div className="grid grid-cols-2 gap-1">
+    {/* Card 1 */}
+    <div className="relative">
+      <img className="w-full" src={card1} alt="Card" />
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+        <p className="bg-black/50 text-white px-2 py-1 rounded">Hello</p>
+        <button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+          View
+        </button>
+      </div>
+    </div>
+
+    {/* Card 2 */}
+    <div className="relative">
+      <img className="w-full" src={card2} alt="Card" />
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+        <p className="bg-black/50 text-white px-2 py-1 rounded">Hello</p>
+        <button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+          View
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
