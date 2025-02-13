@@ -191,6 +191,24 @@ const Home = () => {
         </button>
       </div>
     </div>
+    <div className="relative">
+      <img className="w-full" src={card3} alt="Card" />
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+        <p className="bg-black/50 text-white px-2 py-1 rounded">Hello</p>
+        <button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+          View
+        </button>
+      </div>
+    </div>
+    <div className="relative">
+      <img className="w-full" src={card4} alt="Card" />
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+        <p className="bg-black/50 text-white px-2 py-1 rounded">Hello</p>
+        <button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+          View
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 
